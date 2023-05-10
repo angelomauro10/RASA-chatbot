@@ -56,13 +56,10 @@ responses:
   utter_bot_validacion_conocido_negativo:
   - text: Entiendo. le pedimos disculpas por las molestias. Muchas gracias!
 
-  utter_please_rephrase:
-    - text: Perdon, no entendi bien, podriaas repetir por favor?
 
 actions:
 - action_set_slot_from_xls
-- action_save_conversation
-- action_save_endpoints
+
 
 session_config:
   session_expiration_time: 60

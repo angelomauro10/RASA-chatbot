@@ -2,7 +2,7 @@ version: "3.1"
 
 rules:
 
-- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+- rule: Solicita al usuario que para empezar con la interaccion escriba "hola"
   steps:
-  - intent: nlu_fallback
-  - action: utter_please_rephrase
+  - intent: saludo_random
+  - action: utter_bot_saludo_random

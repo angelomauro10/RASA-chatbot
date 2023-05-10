@@ -11,8 +11,7 @@ stories:
   - action: utter_bot_validacion_moroso_positivo
   - intent: afirmativo
   - action: utter_bot_validacion_oferta_positiva
-  - action: action_save_conversation
-  - action: action_save_endpoints
+ 
 
 
 - story: happy neutral path
@@ -26,8 +25,7 @@ stories:
   - action: utter_bot_validacion_oferta_negativa
   - intent: afirmativo
   - action: utter_bot_validacion_oferta_positiva
-  - action: action_save_conversation
-  - action: action_save_endpoints
+
 
 - story: negative path
   steps:
@@ -40,8 +38,7 @@ stories:
   - action: utter_bot_validacion_oferta_negativa
   - intent: negativo
   - action: utter_bot_validacion_operador_negativo
-  - action: action_save_conversation
-  - action: action_save_endpoints
+
 
 
 - story: acquaintance path
@@ -53,8 +50,7 @@ stories:
   - action: utter_bot_validacion_moroso_negativo
   - intent: afirmativo
   - action: utter_bot_validacion_conocido_positivo
-  - action: action_save_conversation
-  - action: action_save_endpoints
+
 
 
 - story: unknown path
@@ -66,5 +62,4 @@ stories:
   - action: utter_bot_validacion_moroso_negativo
   - intent: negativo
   - action: utter_bot_validacion_conocido_negativo
-  - action: action_save_conversation
-  - action: action_save_endpoints
+
