@@ -1,4 +1,4 @@
-This a Spanish languaje project applying a Python framework named RASA and this is used to create virtual assistants. 
+This a BOT project applying a Python framework named RASA and this is used to create virtual assistants. 
 
 The RASA's chatbot is working with a banks database considering that this bot will contact the customer notifying a 
 specific deubt in a customized sense mentioning: the name, bank's name and money quantity to pay with the finallity to
@@ -33,7 +33,7 @@ Best wishes.
 
 //////////////////     -     /////////////////////
 
-Este es un proyecto en idioma espaniol que aplica un framework de Python llamado RASA y se usa para crear asistentes virtuales.
+Este es un proyecto de un BOT que aplica un framework de Python llamado RASA y se usa para crear asistentes virtuales.
      
 El chatbot de RASA está trabajando con una base de datos de bancos considerando que este bot contactará al cliente notificando un
 deuda específica en un sentido personalizado mencionando: el nombre, el nombre del banco y la cantidad de dinero a pagar con la finalidad de
