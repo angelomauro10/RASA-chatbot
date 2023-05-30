@@ -4,83 +4,38 @@ version: "3.1"
 
 nlu:
 
-- intent: contestan_llamada
+- intent: reached_call
   examples: |
-    - hola
-    - buenas tardes
+    - hi
+    - hello
+    - hello there
+    - hey
 
-
-- intent: afirmativo
+    
+- intent: affirmative
   examples: |
-    - sí
-    - C
-    - seguro
-    - claro
-    - por supuesto
-    - definitivamente
-    - completamente
-    - sin duda
-    - correcto
-    - vale
-    - de acuerdo
-    - claro que sí
-    - seguro que sí
-    - obvio
-    - por qué no
-    - absolutamente
+    - yes
+    - sure
     - ok
-    - bueno
-    - afirmativo
-    - si claro
-    - si
-    - claro que si
-    - si por favor
-    - me parece bien
-    - me parece correcto
-    - correcto
-    - bien
-    - entendido
+    - go ahead
+    - got it
+    - awesome
+    - lets go
 
-- intent: negativo
+
+- intent: negative
   examples: |
     - no
-    - no gracias
-    - no estoy interesado
+    - no thanks
+    - I dont care
+    - I am not interested
+    - bye
 
-- intent: saludo_random
+
+- intent: random_greet
   examples: |
     - asasdas
     - pff
     - m
     - s
     - n
-
-- regex: confirmacion
-  examples: |
-    - /sí/i
-    - /seguro/i
-    - /claro/i
-    - /por supuesto/i
-    - /definitivamente/i
-    - /completamente/i
-    - /sin duda/i
-    - /correcto/i
-    - /vale/i
-    - /de acuerdo/i
-    - /claro que sí/i
-    - /seguro que sí/i
-    - /obvio/i
-    - /por qué no/i
-    - /absolutamente/i
-    - /ok/i
-    - /bueno/i
-    - /afirmativo/i
-    - /si claro/i
-    - /si/i
-    - /claro que si/i
-    - /si por favor/i
-    - /me parece bien/i
-    - /me parece correcto/i
-    - /correcto/i
-    - /bien/i
-    - /entendido/i

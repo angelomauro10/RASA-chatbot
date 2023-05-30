@@ -2,7 +2,7 @@ version: "3.1"
 
 rules:
 
-- rule: Solicita al usuario que para empezar con la interaccion escriba "hola"
+- rule: random greeting
   steps:
-  - intent: saludo_random
-  - action: utter_bot_saludo_random
+  - intent: random_greet
+  - action: utter_bot_random_greeting

@@ -1,10 +1,10 @@
 version: "3.1"
 
 intents:
-  - contestan_llamada
-  - afirmativo
-  - negativo
-  - saludo_random
+  - reached_call
+  - affirmative
+  - negative
+  - random_greet
 
 slots:
   nombre:
@@ -25,36 +25,36 @@ slots:
     type: text
     influence_conversation: false
     mappings:
-    - type: custom
+    - type: custom 
 
-
+    
 responses:
-  utter_bot_saludo:
-  - text: "Hola, soy el asistente virtual de MOPC Argentina en representacion del {idcliente}, hablo con {nombre}?"
+  utter_bot_greeting:
+  - text: Hi, I am your virtual assistant of SaveMoney representing {idcliente}, I would like to talk with Mr./Mrs. {nombre}
 
-  utter_bot_validacion_moroso_positivo:
-  - text: "{nombre}, nos comunicamos del departamento de cobranzas del {idcliente} para informarle que tiene una deuda de {saldo_total} Hoy podemos ofrecerle alternativas de pago con importantes descuentos para regularizar su situacion. Le interesa conocer los detalles?"
+  utter_bot_positive_defaulter_validation:
+  - text: {nombre}, I am reaching to you for help dued you monetary condition {saldo_total} and my mission is to find the way to offer differents facilities. Are you interested?
 
-  utter_bot_validacion_oferta_positiva:
-  - text: "Perfecto. Aguarde en linea mientras transfiero la llamada a un asesor. Si prefiere continuar por mail puede hacerlo a cobranzas_santander@mopc.cc, o al 113988009. Muchas gracias!"
+  utter_bot_positive_offer_validation:
+  - text: Voilá {nombre}. Please hold on a few seconds for being transfered with an operator. You can also send us an email to savemoney@gmail.com, Thank you!
 
-  utter_bot_validacion_oferta_negativa:
-  - text: Entiendo {nombre}. Le sugerimos que aproveche esta oportunidad, estamos ofreciendo planes de pago con descuento y en cuotas fijas sin interes. Prefiere que lo derive con un asesor para regularizar su situacion y aprovechar estos beneficios?
+  utter_bot_negative_offer_validation:
+  - text: I understand {nombre}. You will not regreat once you have heard our wallet... bonos, discounts, gifts and more!!! Are you ready?
 
-  utter_bot_validacion_operador_negativo:
-  - text: Entiendo. Le pedimos que analice su situacion y por cualquier consulta se comunica con nosotros por mail a cobranzas_santander@mopc.cc, o al 1139888009 Muchas gracias!
+  utter_bot_negative_operator_validation:
+  - text:  We are with you {nombre}. If you change your opinion just send an email to savemone@gmail.com or simply call us to 111-222-333-44. Thank you! 
 
-  utter_bot_saludo_random:
-  - text: "Para iniciar con la interaccion escribi hola"
+  utter_bot_random_greet:
+  - text: Type "hello" to start!
 
-  utter_bot_validacion_moroso_negativo:
-  - text: Entiendo. usted es familiar o conocido de {nombre}?
-
-  utter_bot_validacion_conocido_positivo:
-  - text: Le pido que aguarde un instante para que un operador tome nota de los datos de contacto correcto. Muchas gracias!
-
-  utter_bot_validacion_conocido_negativo:
-  - text: Entiendo. le pedimos disculpas por las molestias. Muchas gracias!
+  utter_bot_negative_defaulter_validation:
+  - text:  I am sorry for the confussion. Is {nombre} member of your family or do you know him/her?
+ 
+  utter_bot_positive_acquaintance_validation:
+  - text: Plase wait a moment while an operator is available. Thank you!
+  
+  utter_bot_negative_acquaintance_validation:
+  - text: I apologize for the inconvenience. Thank you!
 
 
 actions:

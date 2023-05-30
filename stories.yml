@@ -4,62 +4,54 @@ stories:
 
 - story: happy positive path
   steps:
-  - intent: contestan_llamada
+  - intent: reached_call
   - action: action_set_slot_from_xls
-  - action: utter_bot_saludo
-  - intent: afirmativo
-  - action: utter_bot_validacion_moroso_positivo
-  - intent: afirmativo
-  - action: utter_bot_validacion_oferta_positiva
- 
-
-
+  - action: utter_bot_greeting
+  - intent: affirmative
+  - action: utter_bot_positive_defaulter_validation
+  - intent: affirmative
+  - action: utter_bot_positive_offer_validate
+  
 - story: happy neutral path
   steps:
-  - intent: contestan_llamada
+  - intent: reached_call
   - action: action_set_slot_from_xls
-  - action: utter_bot_saludo
-  - intent: afirmativo
-  - action: utter_bot_validacion_moroso_positivo
-  - intent: negativo
-  - action: utter_bot_validacion_oferta_negativa
-  - intent: afirmativo
-  - action: utter_bot_validacion_oferta_positiva
-
+  - action: utter_bot_greeting
+  - intent: affirmative
+  - action: utter_bot_positive_defaulter_validation
+  - intent: negative
+  - action: utter_bot_negative_offer_validation
+  - intent: affirmative
+  - action: utter_bot_positive_offer_validation
 
 - story: negative path
   steps:
-  - intent: contestan_llamada
+  - intent: reached_call
   - action: action_set_slot_from_xls
-  - action: utter_bot_saludo
-  - intent: afirmativo
-  - action: utter_bot_validacion_moroso_positivo
-  - intent: negativo
-  - action: utter_bot_validacion_oferta_negativa
-  - intent: negativo
-  - action: utter_bot_validacion_operador_negativo
-
-
+  - action: utter_bot_greeting
+  - intent: affirmative
+  - action: utter_bot_positive_defaulter_validation
+  - intent: negative
+  - action: utter_bot_negative_offer_validation
+  - intent: negative
+  - action: utter_bot_negative_operator_validation
 
 - story: acquaintance path
   steps:
-  - intent: contestan_llamada
+  - intent: reached_call
   - action: action_set_slot_from_xls
-  - action: utter_bot_saludo
-  - intent: negativo
-  - action: utter_bot_validacion_moroso_negativo
-  - intent: afirmativo
-  - action: utter_bot_validacion_conocido_positivo
-
-
+  - action: utter_bot_greeting
+  - intent: negative
+  - action: utter_bot_negative_defaulter_validation
+  - intent: affirmative
+  - action: utter_bot_positive_acquaintance_validation
 
 - story: unknown path
   steps:
-  - intent: contestan_llamada
+  - intent: reached_call
   - action: action_set_slot_from_xls
-  - action: utter_bot_saludo
-  - intent: negativo
-  - action: utter_bot_validacion_moroso_negativo
-  - intent: negativo
-  - action: utter_bot_validacion_conocido_negativo
-
+  - action: utter_bot_greeting
+  - intent: negative
+  - action: utter_bot_negative_defaulter_validation
+  - intent: negative
+  - action: utter_bot_negative_acquaintance_validation
