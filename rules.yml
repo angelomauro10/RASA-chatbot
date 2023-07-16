@@ -2,7 +2,7 @@ version: "3.1"
 
 rules:
 
-- rule: random greeting
+- rule: fallback
   steps:
-  - intent: random_greet
-  - action: utter_bot_random_greeting
+  - intent: nlu_fallback
+  - action: action_default_fallback
