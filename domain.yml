@@ -4,7 +4,7 @@ intents:
   - reached_call
   - affirmative
   - negative
-  - random_greet
+  - nlu_fallback
 
 slots:
   nombre:
@@ -56,10 +56,12 @@ responses:
   utter_bot_negative_acquaintance_validation:
   - text: I apologize for the inconvenience. Thank you!
 
+  - utter_default:
+  - text: Sorry, I could not interpret your action... So I will repeat...
 
 actions:
 - action_set_slot_from_xls
-
+- action_default_fallback
 
 session_config:
   session_expiration_time: 60
