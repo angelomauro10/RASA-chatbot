@@ -37,12 +37,14 @@ policies:
 # # See https://rasa.com/docs/rasa/policies for more information.
    - name: MemoizationPolicy
    - name: RulePolicy
-     nlu_treshold: 0.7
-     core_treshold: 0.7
-     action_fallback_name: "action_default_fallback"
+     nlu_threshold: 0.7
+     core_threshold: 0.7
+     fallback_action_name: "action_default_fallback"
    - name: TEDPolicy
      max_history: 5
      epochs: 100
+     nlu_threshold: 0.7
+     core_threshold: 0.7
 #   - name: UnexpecTEDIntentPolicy
 #     max_history: 5
 #     epochs: 100
