@@ -12,7 +12,7 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import SlotSet
 import pandas as pd
-import pymssql
+
 
 
 ddbb = pd.read_excel('ddbb.xls')
