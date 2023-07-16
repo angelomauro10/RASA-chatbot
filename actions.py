@@ -41,6 +41,30 @@ class ActionSetSlot(Action):
 
 
 
+   class ActionDefaultFallback(Action):
+    def name(self) -> Text:
+        return "action_default_fallback"
+
+    def run(
+        self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]
+    ) -> List[Dict[Text, Any]]:
+       
+        dispatcher.utter_message(template="utter_default")
+        
+     
+        last_bot_event = next(
+            filter(lambda e: e.get("event") == "bot", reversed(tracker.events)), None
+        )
+        
+        if last_bot_event is not None:
+     
+            bot_text = last_bot_event.get("text")
+            
+            dispatcher.utter_message(text=bot_text)
+        
+        return []
+   
+
 #
 #
 #
