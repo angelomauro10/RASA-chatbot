@@ -32,10 +32,27 @@ nlu:
     - bye
 
 
-- intent: random_greet
+- intent: nlu_fallback
   examples: |
     - asasdas
     - pff
     - m
     - s
     - n
+    - .nf
+    - G!p
+    - !
+    - . []
+    - ahha
+    - ah?
+    - eh?
+    - CP
+    - /'/'
+    - }
+    - qpdikjfdgidsfgsdas
+    - ASk
+    - C LDFD
+    - 1 uno
+    - four
+    - Sorry
+    - What the
