@@ -6,7 +6,7 @@ redirect the user with a telephonically operator.
 
 Every RASA's response as bot states a logical action depending the user's decission (if the person wants being comunicated
 with a operator or not, or if the contacted is a family member or known person) and the bot will understand wich action 
-must has to do.
+must has to do. Beside that this bot has the fallback identiffication if user try to make a chit-chat action and fallback action will be activated explaining that does not understand the action and also will repeat the last message.
 
 For last, when the bot finish the interaction, will continues with the next row (person) restarting it as a 
 new historical event.
@@ -26,8 +26,10 @@ nlu.yml : Here we have the user's lists responses for each given event.
 
 rules.yml : The bot reply's when the user is trying to do some action out of the specific bot's function.
 
+config.yml : configure of fallback restrictions.
+
 stories.yml : In this file are every situational event that this bot will have always persuading the user for being redirected
-with a bank's representative.
+with a bank's representative. 
 
 Best wishes.
 
@@ -41,7 +43,7 @@ redirigir al usuario con un operador telefónico.
 
 Cada respuesta de RASA como bot establece una acción lógica dependiendo de la decisión del usuario (si la persona quiere ser comunicada
 con un operador o no, o si el contactado es un miembro de la familia o una persona conocida) y el bot entenderá qué acción
-debe tomar.
+debe tomar. Aparte de eso, el bot tiene la identificacion de fallback en caso que el usario intente hacer alguna trampa al bot y cuando el fallback se active dará un mensaje de que no entiende la accion e incluso repetirá el mensaje.
 
 Por último, cuando el bot termine la interacción, continuará con la siguiente fila (persona) reiniciándolo como un
 nuevo acontecimiento histórico.
@@ -64,6 +66,9 @@ rules.yml: La respuesta del bot cuando el usuario intenta realizar alguna acció
 
 stories.yml: En este archivo se encuentran todos los eventos situacionales que este bot tendrá siempre 
 persuadiendo al usuario para que sea redirigido con un representante del banco.
+
+config.yml: configuracion de las politicas para el fallback.
+
 
 Saludos cordiales.
 
